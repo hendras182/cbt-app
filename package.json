@@ -1,0 +1,37 @@
+{
+  "name": "cbt-app",
+  "version": "1.0.0",
+  "description": "Aplikasi Computer Based Test untuk ujian online",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/index.js",
+    "start": "node src/index.js",
+    "test": "jest",
+    "lint": "eslint src/",
+    "migrate": "node src/database/migrate.js"
+  },
+  "keywords": [
+    "cbt",
+    "ujian",
+    "online-exam",
+    "education"
+  ],
+  "author": "hendras182",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.0",
+    "dotenv": "^16.0.3",
+    "pg": "^8.11.1",
+    "cors": "^2.8.5",
+    "helmet": "^7.0.0",
+    "express-validator": "^7.0.0",
+    "axios": "^1.4.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1",
+    "jest": "^29.5.0",
+    "eslint": "^8.42.0"
+  }
+}
